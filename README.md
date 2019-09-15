@@ -44,4 +44,10 @@
    - clust(load_data).HClust(output='add').classify(SVC()) --> Uses Heirarchical Clustering with SVC Classification
       Accuracy: 0.9329004329004329
       'classify'  2567.15 ms
-4. 
+4. Model Selection
+5. Stacking with Classification
+   - All the files used here are with .py extension because was required to create Class and import the class to other file and was not      able to do it through notebook: This actual test our data and output with Stacking Classification which gives 99% accuracy.
+   - onego.py: This stacking technique creates prediction dataset in one go.
+   - outoffolds.py: This stacking technique creates prediction dataset by taking the average of the out-of-fold predictors' predictions
+   - StackingClassifier.py: This class uses above 2 methods for stacking classification
+   - test_stackingclassifier.py: This actual test our data and output with Stacking Classification which gives 99% accuracy.
